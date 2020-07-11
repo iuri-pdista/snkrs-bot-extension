@@ -1,11 +1,8 @@
-class snkrs_bot{
-    constructor(
-
-    );
-    
-};
-
-document.querySelector("#submit").
-addEventListener("click", event =>{
-    //Bot's action
-});
+function inject(){
+    chrome.tabs.executeScript({
+        file: './js/bot.js'
+    });
+}
+document.addEventListener("DOMContentLoaded",()=>{
+    document.querySelector("#submitSnkrsBot")?.addEventListener("click", inject);
+})
