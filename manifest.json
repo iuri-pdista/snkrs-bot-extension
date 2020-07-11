@@ -1,4 +1,11 @@
 {
-
-
+    "name":"nike-bot-chrome",
+    "version":"0.1.0",
+    "manifest_version": 2,
+    "description": "A chrome extension to buy new released shoes from nike's website",
+    "offline_enabled": false,
+    "page_action": {
+        "defautl_popup":"uInterface.html",
+        "default_title": "n1k3_b0t"
+    }
 }
