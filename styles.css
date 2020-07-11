@@ -11,7 +11,6 @@
     border: none;
     outline: none;
     padding: .3rem .8rem;
-    transition: ease .3s;
 }
 .btn:hover{
     background-color: #1b1d1f;
