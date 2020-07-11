@@ -5,7 +5,7 @@
     "description": "A chrome extension to buy new released shoes from nike's website",
     "offline_enabled": false,
     "background": {
-        "scripts": ["background.js", "jquery.js"],
+        "scripts": ["./assets/background.js", "./assets/jquery.js"],
         "persistent": false
     },
     "browser_action": {
