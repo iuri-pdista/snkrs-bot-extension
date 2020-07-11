@@ -6,25 +6,25 @@
 </head>
 <body>
     <form>
-        <input type="text" id="urlInput" name="urlInput">
-        <input type="number" id="sizeInput1" name="sizeInput1">
-        <input type="number" id="sizeInput2" name="sizeInput2">
-        <button type="submit" id="submit" class="submit">Submit</button>
         <label for="urlInput">
             <h5>
                 Por favor coloque a url do snkrs:
             </h5>
         </label>
+        <input type="text" id="urlInput" name="urlInput" required>
         <label for="sizeInput1">
             <h5>
                 Por favor selecione sua opção primária de tênis:
             </h5>
         </label>
+        <input type="number" id="sizeInput1" name="sizeInput1" min="30" max="50" required>
         <label for="sizeInput2">
             <h5>
                 Por favor selecione sua opção secundária de tênis:
             </h5>
         </label>
+        <input type="number" id="sizeInput2" name="sizeInput2" min="30" max="50" required>
+        <button type="submit" id="submit" class="submit">Submit</button>        
     </form>    
 </body>
 </html>
