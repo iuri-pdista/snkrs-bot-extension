@@ -5,7 +5,7 @@
     "description": "A chrome extension to buy new released shoes from nike's website",
     "offline_enabled": false,
     "page_action": {
-        "defautl_popup":"uInterface.html",
+        "default_popup":"uInterface.html",
         "default_title": "n1k3_b0t"
     }
 }
