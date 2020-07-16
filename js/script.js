@@ -10,12 +10,7 @@ function stop(){
 }
 
 document.querySelector("#buy")?.addEventListener("click", inject); 
-
-
-while (injectDecision){
-    inject();
-    document.querySelector("#stop")?.addEventListener("click",stop);
-} 
+document.querySelector("#stop")?.addEventListener("click",stop);
 chrome.tabs.executeScript({
     code: 'location.assign("https://www.nike.com.br/Carrinho")'
 });
