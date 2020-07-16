@@ -5,7 +5,8 @@
     "description": "A chrome extension to buy new released shoes from nike's website",
     "offline_enabled": false,
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "tabs"
     ],
     "background": {
         "scripts": ["./js/script.js"],
@@ -23,11 +24,5 @@
         "matches": [
             "https://www.nike.com.br/*"
         ]
-    },
-    "content_scripts": [
-        {
-          "matches": ["https://www.nike.com.br/*"],
-          "js": ["js/bot.js"]
-        }
-    ]
+    }
 }

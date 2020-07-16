@@ -1,9 +1,21 @@
+var injectDecision = true;
 function inject(){
     chrome.tabs.executeScript({
         file: './js/bot.js'
     });
 }
 
-document.addEventListener("DOMContentLoaded",()=>{
-    document.querySelector("#submitSnkrsBot")?.addEventListener("click", inject);
-})
+function stop(){
+    injectDecision = false;
+}
+
+document.querySelector("#buy")?.addEventListener("click", inject); 
+
+
+while (injectDecision){
+    inject();
+    document.querySelector("#stop")?.addEventListener("click",stop);
+} 
+chrome.tabs.executeScript({
+    code: 'location.assign("https://www.nike.com.br/Carrinho")'
+});
