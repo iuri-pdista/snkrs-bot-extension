@@ -1,7 +1,7 @@
 document.getElementById('btn-comprar')?.click();
-if(location.href === "https://www.nike.com.br/Carrinho"){ 
+if (location.href === "https://www.nike.com.br/Carrinho" && location.href != "https://www.nike.com.br/Checkout"){    
     location.assign("https://www.nike.com.br/Checkout");
-}
+}    
 if(location.href === "https://www.nike.com.br/Checkout"){
     document.getElementById("seguir-pagamento")?.addEventListener("click", event => event.preventDefault())
     document.getElementById("seguir-pagamento")?.click();
